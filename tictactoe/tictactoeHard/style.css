@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poiret One", cursive;
+  color: #262934;
+  background-color: #78bec5;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+header {
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #3d4250;
+  font-size: 60px;
+  margin: 20px 0 0 0;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 140px;
+  text-shadow: 1px 1px 2px #3d4250;
+}
+
+h3 {
+  text-shadow: 1px 1px 2px #3d4250;
+  font-size: 30px;
+  margin: 0;
+}
+
+section {
+  min-height: 80%;
+  margin: 0 auto -50px;
+  text-align: center;
+}
+
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  line-height: 50px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 0px;
+  padding: 15px;
+}
+
+/*Tic Tac Toe*/
+
+td {
+  border: 10px solid white;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 90px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  td {
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  position: absolute;
+  left: 50%;
+  margin-left: -220px;
+  top: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  table {;
+  left: 50%;
+  margin-left: -120px;
+  top: 350px;
+}
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+.endgame {
+  display: none;
+  height: 150px;
+  width: 300px;
+  top: 350px;
+  background-color: rgba(115, 231, 186, 0.9);
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .endgame {
+    height: 100px;
+    width: 250px;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 30px;
+  }
+}
+
+/*buttons*/
+a {
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 3px #8e8da3;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  a {
+    font-size: 30px;
+  }
+}
+
+.menu {
+  margin-top: 550px;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu .button {
+  margin: 10px 60px 0 60px;
+  box-shadow: 2px 2px 3px #8e8da3;
+  display: inline-block;
+  height: 60px;
+  width: 160px;
+  line-height: 60px;
+  border-radius: 5%;
+  border: 3px solid white;
+  transition: color 0.2s;
+}
+@media screen and (max-width: 600px) {
+  .menu .button {
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    margin: 30px;
+  }
+}
+
+.menu .button:first-child:hover {
+  color: rgb(236, 175, 79);
+  border: 3px solid rgb(236, 175, 79);
+}
+
+.menu .button:first-child:hover:before {
+  top: -5px;
+  left: -50px;
+}
+
+.menu .button:last-child:hover {
+  color: rgb(220, 104, 90);
+  border: 3px solid rgb(220, 104, 90);
+}
+
+.menu .button:last-child:hover:before {
+  top: -5px;
+  left: -50px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
